@@ -1,0 +1,278 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@700&family=Roboto:wght@400;700&display=swap');
+
+/* Color Variables */
+:root {
+  --primary-saffron: #FF9933;
+  --primary-maroon: #800000;
+  --primary-gold: #FFD700;
+  --secondary-cream: #FFF8E1;
+  --accent-blue: #1B4F72;
+  --text-dark: #2d2d2d;
+}
+
+/* Body & Background */
+body {
+  background: linear-gradient(135deg, var(--secondary-cream) 0%, #fff 100%);
+  font-family: 'Roboto', Arial, sans-serif;
+  color: var(--text-dark);
+}
+
+/* Headings */
+header.main_menu {
+  background: linear-gradient(120deg,  #FFD700 0%, #FF8800 100%);
+  box-shadow: 0 4px 16px rgba(128,0,0,0.12);
+  /* position: relative;
+  z-index: 10; */
+  /* Optional: Add a subtle overlay pattern */
+  /* Uncomment the following lines if you have a suitable SVG or PNG pattern */
+  /* 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('../img/header-mandala-overlay.svg') repeat-x top center;
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: 1;
+  }
+  */
+}
+
+h1, h2, h3, h4, .intro-font {
+  font-family: 'Noto Sans Gujarati', 'Baloo Bhaina 2', cursive, sans-serif;
+  color: var(--primary-maroon);
+  letter-spacing: 1px;
+}
+
+/* Typography improvements */
+.intro-font {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .intro-font {
+    font-size: 1rem;
+  }
+}
+
+/* Section Titles */
+.section_tittle h2 {
+  color: var(--primary-saffron);
+  border-bottom: 2px solid var(--primary-gold);
+  display: inline-block;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+/* Responsive spacing for sections */
+.section_padding {
+  padding: 40px 0;
+}
+
+@media (max-width: 768px) {
+  .section_padding {
+    padding: 20px 0;
+  }
+}
+
+/* Service Cards */
+.single_service_part {
+  background: #fff;
+  border: 2px solid var(--primary-gold);
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(255, 153, 51, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 2em;
+}
+.single_service_part:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(128, 0, 0, 0.15);
+  border-color: var(--primary-saffron);
+}
+.single_service_text img, .single_service_text i {
+  max-width: 70px;
+  margin-bottom: 1em;
+  filter: drop-shadow(0 2px 8px rgba(255, 153, 51, 0.15));
+}
+
+/* Card improvements */
+.achievement-card {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Suvichar/Quotes */
+/* .suvichar, .highlight-suvichar {
+  font-family: 'Noto Sans Gujarati', cursive, sans-serif;
+  font-style: italic;
+  background: linear-gradient(90deg, var(--primary-gold) 0%, #fff 100%);
+  border-left: 4px solid var(--primary-saffron);
+  padding: 1em 1.5em;
+  margin: 1em 0;
+  color: var(--primary-maroon);
+  border-radius: 8px;
+} */
+
+/* Contact Section Styles */
+.contact-info-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 25px rgba(128, 0, 0, 0.15);
+}
+
+.contact-icon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  background: var(--secondary-cream);
+  border-radius: 50%;
+  color: var(--primary-saffron);
+  margin-bottom: 15px;
+}
+
+.contact-icon i {
+  font-size: 30px;
+}
+
+.quick-contact-box,
+.social-links-box,
+.business-hours-box {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: var(--secondary-cream);
+  border-radius: 50%;
+  color: var(--primary-saffron);
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: var(--primary-saffron);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.form-control {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 12px 15px;
+  height: auto;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.form-control:focus {
+  border-color: var(--primary-saffron);
+  box-shadow: 0 0 0 0.2rem rgba(255, 153, 51, 0.25);
+}
+
+.button-contactForm {
+  padding: 12px 35px;
+  border-radius: 24px;
+  background: var(--primary-gold);
+  border: none;
+  color: var(--primary-maroon);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.button-contactForm:hover {
+  background: var(--primary-saffron);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Responsive Styles for Contact Section */
+@media (max-width: 768px) {
+  .contact-info-card {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info-sidebar {
+    margin-top: 30px;
+  }
+}
+
+/* Footer */
+.footer-area {
+  background: var(--primary-maroon);
+  color: var(--primary-gold);
+  padding-top: 3em;
+}
+.footer-area a, .footer-area .intro-font {
+  color: var(--primary-gold);
+}
+.footer-area .single-footer-widget h4 {
+  color: var(--primary-gold);
+  border-bottom: 1px solid var(--primary-gold);
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+.footer-area .social_icon a {
+  color: var(--primary-gold);
+  margin-right: 0.5em;
+  font-size: 1.5em;
+  transition: color 0.2s;
+}
+.footer-area .social_icon a:hover {
+  color: var(--primary-saffron);
+}
+
+/* Decorative Divider */
+.section_tittle:after {
+  content: "ॐ";
+  display: block;
+  font-size: 2em;
+  color: var(--primary-gold);
+  margin: 0.2em auto 0;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+/* Buttons */
+.menu_btn, .btn, .footer_menu a {
+  background: var(--primary-gold);
+  color: var(--primary-maroon) !important;
+  border-radius: 24px;
+  padding: 0.5em 2em;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+  border: none;
+}
+.menu_btn:hover, .btn:hover, .footer_menu a:hover {
+  background: var(--primary-saffron);
+  color: #fff !important;
+}

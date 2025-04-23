@@ -1,0 +1,98 @@
+/* Header */
+header.main_menu {
+  background: linear-gradient(120deg, #800000 0%, #FF9933 60%, #FFD700 100%);
+  box-shadow: 0 4px 16px rgba(128,0,0,0.12);
+  position: relative;
+  z-index: 10;
+  /* Optional: Add a subtle overlay pattern */
+  /* Uncomment the following lines if you have a suitable SVG or PNG pattern */
+  /* 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('../img/header-mandala-overlay.svg') repeat-x top center;
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: 1;
+  }
+  */
+}
+.navbar-nav .nav-link {
+  color: #FFD700;
+  font-family: 'Noto Sans Gujarati', sans-serif;
+  font-weight: 700;
+  transition: color 0.2s;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #fff;
+  text-shadow: 0 1px 8px #80000044;
+}
+.menu_btn {
+  background: #FFD700;
+  color: #800000 !important;
+  border-radius: 24px;
+  padding: 0.5em 2em;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(255,153,51,0.15);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  position: relative;
+  z-index: 2;
+}
+.menu_btn:hover {
+  background: #FF9933;
+  color: #fff !important;
+  box-shadow: 0 4px 16px #FFD70055;
+}
+
+/* Banner */
+.banner_part {
+  background: url('../img/banner-mandala.png') no-repeat center center/cover, #FFF8E1;
+  padding: 4em 0 2em 0;
+}
+.banner_text h1, .banner_text h2, .banner_text h3 {
+  color: #800000;
+  font-family: 'Noto Sans Gujarati', cursive, sans-serif;
+}
+.shlok {
+  font-family: 'Noto Serif', serif;
+  color: #1B4F72;
+  font-size: 1.2em;
+  background: #FFD70022;
+  border-radius: 8px;
+  padding: 0.5em 1em;
+}
+
+/* Service Cards */
+.single_service_part {
+  background: #fff;
+  border: 2px solid #FFD700;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(255, 153, 51, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.single_service_part:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(128, 0, 0, 0.15);
+  border-color: #FF9933;
+}
+
+/* Footer */
+.footer-area {
+  background: #800000;
+  color: #FFD700;
+  padding-top: 3em;
+}
+.footer-area a, .footer-area .intro-font {
+  color: #FFD700;
+}
+.footer-area .social_icon a {
+  color: #FFD700;
+  margin-right: 0.5em;
+  font-size: 1.5em;
+  transition: color 0.2s;
+}
+.footer-area .social_icon a:hover {
+  color: #FF9933;
+}

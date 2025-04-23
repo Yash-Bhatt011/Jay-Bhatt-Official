@@ -1,0 +1,179 @@
+/* Enhanced About Section Styles */
+
+.about_section {
+    background: #f8f9fa;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.intro-font {
+    font-family: 'Noto Sans Gujarati', 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.about_section h1,
+.about_section h2,
+.about_section h3,
+.about_section h4,
+.about_section h5 {
+    color: #2d2d2d;
+    font-weight: 700;
+}
+
+.about_section h1 {
+    font-size: 2.5rem;
+}
+
+.about_section h2 {
+    font-size: 2rem;
+}
+
+.about_section h3 {
+    font-size: 1.5rem;
+}
+
+.about_section h4 {
+    font-size: 1.25rem;
+}
+
+.about_section p.lead {
+    font-size: 1.25rem;
+    color: #444;
+}
+
+.about_section ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about_section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.achievement-card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #e3e3e3;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.achievement-card:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+    border-color: #bba14f;
+}
+
+.achievement-card h3 {
+    color: #bba14f;
+    font-weight: 800;
+}
+
+.achievement-card p.h5 {
+    color: #2d2d2d;
+    font-weight: 600;
+}
+
+.achievement-card p.small {
+    color: #666;
+}
+
+.about_section .border {
+    border-color: #bba14f !important;
+}
+
+.about_section .rounded {
+    border-radius: 14px !important;
+}
+
+.about_section .bg-light {
+    background: #fffbe6 !important;
+}
+
+.about_section .btn-primary {
+    background: linear-gradient(90deg, #bba14f 0%, #f7d358 100%);
+    border: none;
+    color: #2d2d2d;
+    font-weight: 700;
+    padding: 0.75rem 2.5rem;
+    border-radius: 30px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.about_section .btn-primary:hover {
+    background: linear-gradient(90deg, #f7d358 0%, #bba14f 100%);
+    color: #fff;
+}
+
+.about_section img.rounded-circle {
+    border: 4px solid #bba14f;
+    box-shadow: 0 4px 24px rgba(187,161,79,0.08);
+}
+
+@media (max-width: 991.98px) {
+    .about_section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .about_section h1 {
+        font-size: 2rem;
+    }
+    .about_section h2 {
+        font-size: 1.5rem;
+    }
+    .about_section h3 {
+        font-size: 1.2rem;
+    }
+    .about_section .achievement-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .about_section .row.mb-5 {
+        margin-bottom: 2rem !important;
+    }
+    .about_section .col-md-4,
+    .about_section .col-md-8 {
+        text-align: center;
+    }
+    .about_section img.rounded-circle {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Testimonials */
+.about_section .p-4.border.bg-light {
+    border-color: #f7d358 !important;
+    box-shadow: 0 2px 8px rgba(187,161,79,0.07);
+}
+
+.about_section .p-4.border.bg-light strong {
+    color: #bba14f;
+}
+
+/* Section Headings */
+.about_section .text-center.mb-4 h3 {
+    border-bottom: 2px solid #bba14f;
+    display: inline-block;
+    padding-bottom: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+/* Optional: Animate cards on hover */
+.achievement-card,
+.about_section .p-4.border.bg-light {
+    transition: transform 0.18s;
+}
+.achievement-card:hover,
+.about_section .p-4.border.bg-light:hover {
+    transform: translateY(-6px) scale(1.03);
+}
+
+/* Add spacing between testimonial cards on mobile */
+@media (max-width: 767.98px) {
+    .about_section .col-md-6.mb-4 {
+        margin-bottom: 1.5rem !important;
+    }
+}

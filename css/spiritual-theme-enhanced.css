@@ -1,0 +1,125 @@
+/* Breadcrumb Section Enhancements */
+.spiritual-breadcrumb {
+    background: linear-gradient(120deg, #fffbe6 0%, #f7ecd2 100%);
+    position: relative;
+    overflow: hidden;
+}
+.breadcrumb-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(187,161,79,0.18) 0%, rgba(255,255,255,0.12) 100%);
+    z-index: 1;
+}
+.breadcrumb_iner_item .spiritual-heading {
+    text-shadow: 0 2px 12px rgba(187,161,79,0.10);
+    letter-spacing: 1.5px;
+    padding-bottom: 0.25em;
+}
+.breadcrumb-wave {
+    position: absolute;
+    left: 0; right: 0; bottom: -1px;
+    width: 100%;
+    z-index: 2;
+    line-height: 0;
+}
+.breadcrumb-wave svg {
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+
+/* About Section Enhancements */
+.spiritual-about-bg {
+    background: linear-gradient(120deg, #fffbe6 0%, #f7ecd2 100%);
+    position: relative;
+}
+.section-title-with-line {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.25em;
+    margin-bottom: 0.5em;
+}
+.section-title-with-line:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #bba14f 0%, #f7d358 100%);
+    border-radius: 2px;
+    margin: 0.5em auto 0 auto;
+}
+.section-divider {
+    text-align: center;
+    margin: 2.5rem 0 2rem 0;
+}
+.spiritual-profile-img {
+    border: 5px solid #f7d358;
+    box-shadow: 0 6px 32px rgba(187,161,79,0.10);
+    background: #fff;
+    padding: 6px;
+}
+.spiritual-card-hover {
+    transition: box-shadow 0.25s, transform 0.18s;
+    border: 1.5px solid #f7d358 !important;
+    background: #fff;
+}
+.spiritual-card-hover:hover {
+    box-shadow: 0 8px 32px rgba(187,161,79,0.18), 0 2px 8px rgba(0,0,0,0.04);
+    transform: translateY(-6px) scale(1.03);
+    border-color: #bba14f !important;
+    background: #fffbe6;
+}
+.achievement-card h3 {
+    color: #bba14f;
+    font-weight: 800;
+    text-shadow: 0 2px 8px rgba(187,161,79,0.08);
+}
+.achievement-card p.h5 {
+    color: #2d2d2d;
+    font-weight: 600;
+}
+.achievement-card p.small {
+    color: #666;
+}
+
+/* CTA Button Enhancements */
+.spiritual-cta-btn {
+    background: linear-gradient(90deg, #bba14f 0%, #f7d358 100%);
+    border: none;
+    color: #2d2d2d;
+    font-weight: 700;
+    padding: 0.75rem 2.5rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 24px rgba(187,161,79,0.12);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    letter-spacing: 1px;
+}
+.spiritual-cta-btn:hover {
+    background: linear-gradient(90deg, #f7d358 0%, #bba14f 100%);
+    color: #fff;
+    box-shadow: 0 8px 32px rgba(187,161,79,0.18);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .spiritual-profile-img {
+        max-width: 180px;
+    }
+    .section-divider {
+        margin: 1.5rem 0 1rem 0;
+    }
+}
+@media (max-width: 767.98px) {
+    .breadcrumb_bg {
+        min-height: 120px;
+    }
+    .breadcrumb_iner_item h2 {
+        font-size: 1.5rem;
+    }
+    .breadcrumb {
+        font-size: 1rem;
+    }
+    .spiritual-profile-img {
+        max-width: 120px;
+    }
+}

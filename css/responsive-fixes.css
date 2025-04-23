@@ -1,0 +1,88 @@
+/* Fix horizontal overflow and white space */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container fixes */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Responsive fixes for different screen sizes */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    [class*="col-"] {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .single_offer_part {
+        margin-bottom: 20px;
+    }
+    
+    .banner_part {
+        padding: 50px 0;
+    }
+}
+
+/* Fix for gallery grid */
+.masonry-grid {
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+}
+
+/* Fix for footer */
+.footer-area {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Fix for images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fix for banner section */
+.banner_part .container {
+    padding: 0 15px;
+}
+
+/* Fix for service section spacing */
+.service_part .row {
+    margin: 0;
+}
+
+/* Fix for review section */
+.review_part .container {
+    overflow: hidden;
+}
+
+/* Fix for blog section */
+.blog_part .single_offer {
+    margin: 0 auto;
+}

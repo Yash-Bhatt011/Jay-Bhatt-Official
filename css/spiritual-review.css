@@ -1,0 +1,312 @@
+/* Spiritual Review Section Styles */
+.review_part {
+    position: relative;
+    padding: 100px 0;
+    background: linear-gradient(135deg, #fff6e5 0%, #fff9f0 100%);
+    overflow: hidden;
+}
+
+.mandala-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/mandala-pattern.png');
+    background-size: cover;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+/* Section Header */
+.spiritual-divider {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.om-symbol {
+    font-size: 48px;
+    color: #FF6B6B;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+    position: relative;
+    display: inline-block;
+}
+
+.decorative-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.line {
+    height: 2px;
+    width: 100px;
+    background: linear-gradient(90deg, transparent, #FF6B6B, transparent);
+}
+
+.lotus-icon {
+    font-size: 24px;
+    color: #FF6B6B;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Quote Card Styles */
+.quote-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.quote-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-inner {
+    position: relative;
+    border: 2px solid #ffd7b5;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.corner-design {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #FF6B6B;
+}
+
+.top-left {
+    top: -2px;
+    left: -2px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.top-right {
+    top: -2px;
+    right: -2px;
+    border-left: none;
+    border-bottom: none;
+}
+
+.bottom-left {
+    bottom: -2px;
+    left: -2px;
+    border-right: none;
+    border-top: none;
+}
+
+.bottom-right {
+    bottom: -2px;
+    right: -2px;
+    border-left: none;
+    border-top: none;
+}
+
+/* Quote Content */
+.quote-content {
+    position: relative;
+    padding: 20px 0;
+}
+
+.quote-marks {
+    font-size: 60px;
+    color: #FF6B6B;
+    opacity: 0.3;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+.quote-marks.closing {
+    top: auto;
+    left: auto;
+    bottom: -40px;
+    right: -20px;
+}
+
+.suvichar-text {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Gujarati', sans-serif;
+}
+
+/* Author Section */
+.author-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.author-image-wrapper {
+    position: relative;
+    margin-right: 20px;
+}
+
+.author-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #FF6B6B;
+    padding: 3px;
+    margin: 0 auto 15px;
+}
+
+.author-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.author-info {
+    text-align: center;
+}
+
+.author-info h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.author-info p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Social Connect */
+.social-links {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.connect-text {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.youtube {
+    background: #FF0000;
+}
+
+.facebook {
+    background: #1877F2;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+}
+
+.channel-name {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Carousel Controls */
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.prev-quote,
+.next-quote {
+    background: none;
+    border: 2px solid #FF6B6B;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #FF6B6B;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.prev-quote:hover,
+.next-quote:hover {
+    background: #FF6B6B;
+    color: #fff;
+}
+
+.quote-dots {
+    display: flex;
+    gap: 10px;
+}
+
+/* Slider Navigation */
+.review-slider .slick-dots {
+    bottom: -40px;
+}
+
+.review-slider .slick-dots li button:before {
+    font-size: 12px;
+    color: #ff6b6b;
+}
+
+.review-slider .slick-dots li.slick-active button:before {
+    color: #ff6b6b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quote-card {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .suvichar-text {
+        font-size: 20px;
+    }
+
+    .author-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .card-inner {
+        padding: 15px;
+    }
+}
